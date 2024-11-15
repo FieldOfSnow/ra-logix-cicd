@@ -21,10 +21,11 @@ For a more detailed overview of the repository contents, navigate to the [reposi
 - [5-help-documents](5-help-documents/) | Contains a document that provides step-by-step guidance of how to navigate a Studio 5000 Logix Designer® application development scenario using this example CI/CD system, alongside troubleshooting suggestions & some defined script limitations. Another document further details the contents of this repository.
 
 ## Contributing
-We are currently not accepting contributions at this time, but stay tuned for future changes!
+We are currently not accepting contributions at this time.
 
 ## License
-Licensed under the [MIT](LICENSE) license.
+
+Permission to modify and redistribute is granted under the terms of the MIT License.  
+See the [LICENSE](./LICENSE) file for the full license.
 
 ---
-Thank you for visiting the ra-logix-cicd repository!
