@@ -33,7 +33,7 @@ pipeline {
                     def executable_filePath = "${env.PATH_JENKINS_GITHUB}2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\bin\\Release\\" +
                         "net8.0\\CD_Deployment.exe"
 
-                    sh( echo "@${executable_filePath} ${env.PATH_JENKINS_GITHUB} ${env.PATH_GEN_FILES}")
+                    echo "@${executable_filePath} ${env.PATH_JENKINS_GITHUB} ${env.PATH_GEN_FILES}"
                     bat(
                         script: "@${executable_filePath} ${env.PATH_JENKINS_GITHUB} ${env.PATH_GEN_FILES}"
                     )
