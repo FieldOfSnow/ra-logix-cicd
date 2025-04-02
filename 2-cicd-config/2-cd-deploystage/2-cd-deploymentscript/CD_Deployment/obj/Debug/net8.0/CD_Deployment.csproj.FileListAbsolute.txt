@@ -116,7 +116,6 @@ C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystag
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\CD_Deployment.pdb
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\EPPlus.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\EPPlus.Interfaces.dll
-C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\EPPlus.System.Drawing.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\Google.Protobuf.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\Grpc.Core.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\Grpc.Core.Api.dll
@@ -133,12 +132,10 @@ C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystag
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
-C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\RockwellAutomation.FactoryTalkLogixEcho.Api.Client.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\RockwellAutomation.FactoryTalkLogixEcho.Api.Interfaces.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\RockwellAutomation.LogixDesigner.LogixProject.CSClient.dll
-C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\System.Drawing.Common.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\de\RockwellAutomation.FactoryTalkLogixEcho.Api.Client.resources.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\es\RockwellAutomation.FactoryTalkLogixEcho.Api.Client.resources.dll
@@ -153,8 +150,6 @@ C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystag
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\runtimes\osx-x64\native\libgrpc_csharp_ext.x64.dylib
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\runtimes\win-x64\native\grpc_csharp_ext.x64.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\runtimes\win-x86\native\grpc_csharp_ext.x86.dll
-C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\ConsoleFormatter_ClassLibrary.dll
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\LogixDesigner_ClassLibrary.dll
@@ -174,3 +169,4 @@ C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystag
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\obj\Debug\net8.0\CD_Deployment.pdb
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\obj\Debug\net8.0\CD_Deployment.genruntimeconfig.cache
 C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\obj\Debug\net8.0\ref\CD_Deployment.dll
+C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\2-cicd-config\2-cd-deploystage\2-cd-deploymentscript\CD_Deployment\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
