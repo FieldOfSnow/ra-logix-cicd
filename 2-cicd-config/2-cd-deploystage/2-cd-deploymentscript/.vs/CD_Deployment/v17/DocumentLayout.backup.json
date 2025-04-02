@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FBA13A7D-5C92-466A-B1BC-31E9A7FC355F}|CD_Deployment\\CD_Deployment.csproj|c:\\tools\\data\\jenkins_home\\workspace\\ra-example-cd\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\cd_deployment\\cd_deployment.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{FBA13A7D-5C92-466A-B1BC-31E9A7FC355F}|CD_Deployment\\CD_Deployment.csproj|solutionrelative:cd_deployment\\cd_deployment.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FBA13A7D-5C92-466A-B1BC-31E9A7FC355F}|CD_Deployment\\CD_Deployment.csproj|c:\\tools\\data\\jenkins_home\\workspace\\ra-example-cd\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\cd_deployment\\deploymentprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBA13A7D-5C92-466A-B1BC-31E9A7FC355F}|CD_Deployment\\CD_Deployment.csproj|solutionrelative:cd_deployment\\deploymentprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CD_Deployment",
+              "DocumentMoniker": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj",
+              "RelativeDocumentMoniker": "CD_Deployment\\CD_Deployment.csproj",
+              "ToolTip": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj",
+              "RelativeToolTip": "CD_Deployment\\CD_Deployment.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-02T18:50:11.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DeploymentProgram.cs",
               "DocumentMoniker": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\DeploymentProgram.cs",
               "RelativeDocumentMoniker": "CD_Deployment\\DeploymentProgram.cs",
               "ToolTip": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\DeploymentProgram.cs",
               "RelativeToolTip": "CD_Deployment\\DeploymentProgram.cs",
-              "ViewState": "AgIAALoAAAAAAAAAAAAEwMgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T19:03:14.249Z",
               "EditorCaption": ""

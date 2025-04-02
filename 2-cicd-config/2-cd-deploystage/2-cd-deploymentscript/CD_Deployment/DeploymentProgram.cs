@@ -85,7 +85,9 @@ namespace CD_Deployment
             ConsoleMessage("START downloading specified ACD application files to specified controllers...", "NEWSECTION", false);
             ConsoleMessage($"Input excel workbook used is '{inputExcelFilePath}'.", "STATUS");
             CreateBanner("BEGIN DOWNLOADS");
-            ConsoleMessage($"Test1", "STATUS");
+            ConsoleMessage($"Test1 '{inputExcelFilePath}'.", "STATUS", false);
+            ConsoleMessage($"Test1", "STATUS", false);
+            CreateBanner("Test");
 
             int numberOfControllers = GetPopulatedCellsInColumnCount(inputExcelFilePath, 2) - 2;
             ExcelPackage package = new ExcelPackage(new FileInfo(inputExcelFilePath));

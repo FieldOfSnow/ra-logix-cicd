@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "LogixEcho_ClassLibrary/1.0.0": {
         "dependencies": {
-          "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": "3.0.1130"
+          "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": "3.0.1130",
+          "RockwellAutomation.LogixDesigner.CSClient": "2.0.861"
         },
         "runtime": {
           "LogixEcho_ClassLibrary.dll": {}
@@ -134,6 +135,7 @@
           }
         }
       },
+      "RockwellAutomation.LogixDesigner.CSClient/2.0.861": {},
       "System.IO.FileSystem.AccessControl/5.0.0": {
         "dependencies": {
           "System.Security.AccessControl": "5.0.0",
@@ -204,6 +206,13 @@
       "sha512": "sha512-1oz87v2DfAieVmU+CLSnETVuOYuq0Ui07DAh+EEeUtkBiCD1rMozU0qJ9FjI/FzOoR3+8kV31D/RRbtQ0szbyA==",
       "path": "rockwellautomation.factorytalklogixecho.api.client/3.0.1130",
       "hashPath": "rockwellautomation.factorytalklogixecho.api.client.3.0.1130.nupkg.sha512"
+    },
+    "RockwellAutomation.LogixDesigner.CSClient/2.0.861": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cw5i3J/ghUGUfJFTOX6CvGxOMom/pruhYezxlIkW1MKmQCjwu5OQU/ql2Ro+pH4PgjLDbq2bbX1TGq5TRtGKSQ==",
+      "path": "rockwellautomation.logixdesigner.csclient/2.0.861",
+      "hashPath": "rockwellautomation.logixdesigner.csclient.2.0.861.nupkg.sha512"
     },
     "System.IO.FileSystem.AccessControl/5.0.0": {
       "type": "package",
