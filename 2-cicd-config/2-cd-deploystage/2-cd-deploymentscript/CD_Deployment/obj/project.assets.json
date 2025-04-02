@@ -47,7 +47,7 @@
           "lib/net7.0/EPPlus.System.Drawing.dll": {}
         }
       },
-      "Google.Protobuf/3.26.1": {
+      "Google.Protobuf/3.27.3": {
         "type": "package",
         "compile": {
           "lib/net5.0/Google.Protobuf.dll": {
@@ -105,7 +105,7 @@
           }
         }
       },
-      "Grpc.Core.Api/2.62.0": {
+      "Grpc.Core.Api/2.65.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/Grpc.Core.Api.dll": {
@@ -118,10 +118,10 @@
           }
         }
       },
-      "Grpc.Net.Client/2.62.0": {
+      "Grpc.Net.Client/2.65.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.Net.Common": "2.62.0",
+          "Grpc.Net.Common": "2.65.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
         },
         "compile": {
@@ -135,10 +135,10 @@
           }
         }
       },
-      "Grpc.Net.Common/2.62.0": {
+      "Grpc.Net.Common/2.65.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.Core.Api": "2.62.0"
+          "Grpc.Core.Api": "2.65.0"
         },
         "compile": {
           "lib/net8.0/Grpc.Net.Common.dll": {
@@ -183,6 +183,26 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
             "related": ".xml"
           }
         },
@@ -430,19 +450,31 @@
           }
         },
         "contentFiles": {
-          "contentFiles/any/any/_._": {
+          "contentFiles/any/any/FtspAdapter/FactoryTalk.Security.Interop.dll": {
             "buildAction": "None",
             "codeLanguage": "any",
-            "copyToOutput": false
+            "copyToOutput": true,
+            "outputPath": "FactoryTalk.Security.Interop.dll"
+          },
+          "contentFiles/any/any/FtspAdapter/FtspAdapter.exe": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "FtspAdapter.exe"
           }
         }
       },
-      "RockwellAutomation.LogixDesigner.CSClient/2.0.774": {
+      "RockwellAutomation.LogixDesigner.CSClient/2.0.861": {
         "type": "package",
         "dependencies": {
-          "Google.Protobuf": "3.26.1",
-          "Grpc.Net.Client": "2.62.0",
-          "Newtonsoft.Json": "13.0.3"
+          "Google.Protobuf": "3.27.3",
+          "Grpc.Net.Client": "2.65.0",
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "8.0.0",
+          "Microsoft.Extensions.Configuration.Json": "8.0.0",
+          "Newtonsoft.Json": "13.0.3",
+          "System.Text.Json": "8.0.4"
         },
         "compile": {
           "lib/net8.0/RockwellAutomation.LogixDesigner.LogixProject.CSClient.dll": {
@@ -681,6 +713,10 @@
       "ConsoleFormatter_ClassLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": "3.0.1130",
+          "RockwellAutomation.LogixDesigner.CSClient": "2.0.861"
+        },
         "compile": {
           "bin/placeholder/ConsoleFormatter_ClassLibrary.dll": {}
         },
@@ -693,6 +729,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "ConsoleFormatter_ClassLibrary": "1.0.0",
+          "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": "3.0.1130",
           "RockwellAutomation.LogixDesigner.CSClient": "2.0.774"
         },
         "compile": {
@@ -706,7 +743,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": "3.0.1130"
+          "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": "3.0.1130",
+          "RockwellAutomation.LogixDesigner.CSClient": "2.0.861"
         },
         "compile": {
           "bin/placeholder/LogixEcho_ClassLibrary.dll": {}
@@ -787,14 +825,14 @@
         "readme.md"
       ]
     },
-    "Google.Protobuf/3.26.1": {
-      "sha512": "CHZX8zXqhF/fdUtd+AYzew8T2HFkAoe5c7lbGxZY/qryAlQXckDvM5BfOJjXlMS7kyICqQTMszj4w1bX5uBJ/w==",
+    "Google.Protobuf/3.27.3": {
+      "sha512": "ld+oe1+Mc6no643d8otGm6Zylu7KBpGnAiqOW3nOpV8VxUuqhz70vRNKUU5grLaCeuUQVF8t9dm8TgmkTMr1Tg==",
       "type": "package",
-      "path": "google.protobuf/3.26.1",
+      "path": "google.protobuf/3.27.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "google.protobuf.3.26.1.nupkg.sha512",
+        "google.protobuf.3.27.3.nupkg.sha512",
         "google.protobuf.nuspec",
         "lib/net45/Google.Protobuf.dll",
         "lib/net45/Google.Protobuf.pdb",
@@ -850,15 +888,15 @@
         "runtimes/win-x86/native/grpc_csharp_ext.x86.dll"
       ]
     },
-    "Grpc.Core.Api/2.62.0": {
-      "sha512": "q4Jj6bRZHNnE4CMLqgjiBUCKLit+tRr0simZsS2W6U++akd7CzXByeKy2tddqT68hFzP2XzceXA2YtBTfWtixA==",
+    "Grpc.Core.Api/2.65.0": {
+      "sha512": "VHElVX8XpJoaoddHkxhSHrXqn+7k3cZRmAxvZFh0NElkZK5oAT0/QOPM2FJtt5/xIxjQPumz3TOkzrUT6b8V6g==",
       "type": "package",
-      "path": "grpc.core.api/2.62.0",
+      "path": "grpc.core.api/2.65.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "grpc.core.api.2.62.0.nupkg.sha512",
+        "grpc.core.api.2.65.0.nupkg.sha512",
         "grpc.core.api.nuspec",
         "lib/net462/Grpc.Core.Api.dll",
         "lib/net462/Grpc.Core.Api.pdb",
@@ -872,15 +910,15 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.Net.Client/2.62.0": {
-      "sha512": "C7HxLt+wWPTpPFORRHkxxtDLL+K/jXSmZBaPLhFM8AEkN0bYjklIfCwnzajn1gcbRcEETBb0WnRgHJdVzpwbCg==",
+    "Grpc.Net.Client/2.65.0": {
+      "sha512": "ys1Rz7pxV0XR2pm4BVMkm/PrJ2BQu8OXFTvnXzzelTvQ+19OiHbUSb1kSZ2X4V7FziaxrtWY52ssXK3MFjQxbg==",
       "type": "package",
-      "path": "grpc.net.client/2.62.0",
+      "path": "grpc.net.client/2.65.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "grpc.net.client.2.62.0.nupkg.sha512",
+        "grpc.net.client.2.65.0.nupkg.sha512",
         "grpc.net.client.nuspec",
         "lib/net462/Grpc.Net.Client.dll",
         "lib/net462/Grpc.Net.Client.pdb",
@@ -903,14 +941,14 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.Net.Common/2.62.0": {
-      "sha512": "eBv5I4RPWfdezGXqooU5hs3+XcfVMLk5XDlA4G/Nd9TMX78ZGrFl/lM1Ad187zgBLmH7WPAgfjKRWLBwaa1Wbw==",
+    "Grpc.Net.Common/2.65.0": {
+      "sha512": "XbRegnfDrWoXZJ4GGdJat+KXnmCCkR6XQmWnIZxxIjphyZkWZgI0FN1PtGXU4RZ5a5C85qg1cscz1ju2biVXGg==",
       "type": "package",
-      "path": "grpc.net.common/2.62.0",
+      "path": "grpc.net.common/2.65.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "grpc.net.common.2.62.0.nupkg.sha512",
+        "grpc.net.common.2.65.0.nupkg.sha512",
         "grpc.net.common.nuspec",
         "lib/net6.0/Grpc.Net.Common.dll",
         "lib/net6.0/Grpc.Net.Common.pdb",
@@ -987,6 +1025,36 @@
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/8.0.0": {
+      "sha512": "plvZ0ZIpq+97gdPNNvhwvrEZ92kNml9hd1pe3idMA7svR0PztdzVLkoWLcRFgySYXUJc3kSM3Xw3mNFMo/bxRA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.environmentvariables/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Configuration.EnvironmentVariables.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
+        "lib/net6.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "lib/net6.0/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
+        "lib/net7.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "lib/net7.0/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
+        "lib/net8.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "lib/net8.0/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
+        "microsoft.extensions.configuration.environmentvariables.8.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.environmentvariables.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -1343,17 +1411,17 @@
         "rockwellautomation.factorytalklogixecho.api.client.nuspec"
       ]
     },
-    "RockwellAutomation.LogixDesigner.CSClient/2.0.774": {
-      "sha512": "vaGQ6WvbWthQz7hYfmWKnKjzJwsceyy0xkFkihdD0sX2aSvFUKbfn3kMxvXfr5LbMO0synqjmDknF1XXLx/sDg==",
+    "RockwellAutomation.LogixDesigner.CSClient/2.0.861": {
+      "sha512": "cw5i3J/ghUGUfJFTOX6CvGxOMom/pruhYezxlIkW1MKmQCjwu5OQU/ql2Ro+pH4PgjLDbq2bbX1TGq5TRtGKSQ==",
       "type": "package",
-      "path": "rockwellautomation.logixdesigner.csclient/2.0.774",
+      "path": "rockwellautomation.logixdesigner.csclient/2.0.861",
       "files": [
         ".nupkg.metadata",
         "FtspAdapter/FtspAdapter.exe",
         "build/RockwellAutomation.LogixDesigner.CSClient.props",
         "lib/net8.0/RockwellAutomation.LogixDesigner.LogixProject.CSClient.dll",
         "lib/net8.0/RockwellAutomation.LogixDesigner.LogixProject.CSClient.xml",
-        "rockwellautomation.logixdesigner.csclient.2.0.774.nupkg.sha512",
+        "rockwellautomation.logixdesigner.csclient.2.0.861.nupkg.sha512",
         "rockwellautomation.logixdesigner.csclient.nuspec"
       ]
     },
@@ -1889,23 +1957,29 @@
       "EPPlus >= 7.4.0",
       "LogixDesigner_ClassLibrary >= 1.0.0",
       "LogixEcho_ClassLibrary >= 1.0.0",
+      "RockwellAutomation.FactoryTalkLogixEcho.Api.Client >= 3.0.1130",
       "RockwellAutomation.LogixDesigner.CSClient >= 2.0.774"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASYost\\.nuget\\packages\\": {}
+    "C:\\Users\\tnpgent\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj",
+      "projectUniqueName": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj",
       "projectName": "CD_Deployment",
-      "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj",
-      "packagesPath": "C:\\Users\\ASYost\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\obj\\",
+      "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj",
+      "packagesPath": "C:\\Users\\tnpgent\\.nuget\\packages\\",
+      "outputPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ASYost\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tnpgent\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1920,14 +1994,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj"
+            "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj": {
+              "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj"
             },
-            "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj"
+            "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj": {
+              "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj"
             },
-            "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj"
+            "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj": {
+              "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj"
             }
           }
         }
@@ -1941,7 +2015,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -1950,6 +2025,10 @@
           "EPPlus": {
             "target": "Package",
             "version": "[7.4.0, )"
+          },
+          "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": {
+            "target": "Package",
+            "version": "[3.0.1130, )"
           },
           "RockwellAutomation.LogixDesigner.CSClient": {
             "target": "Package",
@@ -1972,8 +2051,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "CD_Deployment depends on RockwellAutomation.LogixDesigner.CSClient (>= 2.0.774) but RockwellAutomation.LogixDesigner.CSClient 2.0.774 was not found. RockwellAutomation.LogixDesigner.CSClient 2.0.861 was resolved instead.",
+      "libraryId": "RockwellAutomation.LogixDesigner.CSClient",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

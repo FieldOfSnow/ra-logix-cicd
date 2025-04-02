@@ -161,6 +161,12 @@
           }
         }
       },
+      "RockwellAutomation.LogixDesigner.CSClient/2.0.861": {
+        "type": "package",
+        "build": {
+          "build/RockwellAutomation.LogixDesigner.CSClient.props": {}
+        }
+      },
       "System.IO.FileSystem.AccessControl/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -401,6 +407,20 @@
         "rockwellautomation.factorytalklogixecho.api.client.nuspec"
       ]
     },
+    "RockwellAutomation.LogixDesigner.CSClient/2.0.861": {
+      "sha512": "cw5i3J/ghUGUfJFTOX6CvGxOMom/pruhYezxlIkW1MKmQCjwu5OQU/ql2Ro+pH4PgjLDbq2bbX1TGq5TRtGKSQ==",
+      "type": "package",
+      "path": "rockwellautomation.logixdesigner.csclient/2.0.861",
+      "files": [
+        ".nupkg.metadata",
+        "FtspAdapter/FtspAdapter.exe",
+        "build/RockwellAutomation.LogixDesigner.CSClient.props",
+        "lib/net8.0/RockwellAutomation.LogixDesigner.LogixProject.CSClient.dll",
+        "lib/net8.0/RockwellAutomation.LogixDesigner.LogixProject.CSClient.xml",
+        "rockwellautomation.logixdesigner.csclient.2.0.861.nupkg.sha512",
+        "rockwellautomation.logixdesigner.csclient.nuspec"
+      ]
+    },
     "System.IO.FileSystem.AccessControl/5.0.0": {
       "sha512": "SxHB3nuNrpptVk+vZ/F+7OHEpoHUIKKMl02bUmYHQr1r+glbZQxs7pRtsf4ENO29TVm2TH3AEeep2fJcy92oYw==",
       "type": "package",
@@ -571,23 +591,29 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "RockwellAutomation.FactoryTalkLogixEcho.Api.Client >= 3.0.1130"
+      "RockwellAutomation.FactoryTalkLogixEcho.Api.Client >= 3.0.1130",
+      "RockwellAutomation.LogixDesigner.CSClient >= 2.0.861"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASYost\\.nuget\\packages\\": {}
+    "C:\\Users\\tnpgent\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj",
+      "projectUniqueName": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj",
       "projectName": "LogixEcho_ClassLibrary",
-      "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj",
-      "packagesPath": "C:\\Users\\ASYost\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\obj\\",
+      "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj",
+      "packagesPath": "C:\\Users\\tnpgent\\.nuget\\packages\\",
+      "outputPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ASYost\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tnpgent\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -613,7 +639,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net6.0": {
@@ -622,6 +649,10 @@
           "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": {
             "target": "Package",
             "version": "[3.0.1130, )"
+          },
+          "RockwellAutomation.LogixDesigner.CSClient": {
+            "target": "Package",
+            "version": "[2.0.861, )"
           }
         },
         "imports": [
@@ -640,7 +671,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

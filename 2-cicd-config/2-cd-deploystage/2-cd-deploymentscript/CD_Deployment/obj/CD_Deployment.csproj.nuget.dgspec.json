@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj": {}
+    "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj": {
+    "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj",
+        "projectUniqueName": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj",
         "projectName": "CD_Deployment",
-        "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj",
-        "packagesPath": "C:\\Users\\ASYost\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\obj\\",
+        "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\CD_Deployment.csproj",
+        "packagesPath": "C:\\Users\\tnpgent\\.nuget\\packages\\",
+        "outputPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASYost\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tnpgent\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,14 +33,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj"
+              "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj": {
+                "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj"
               },
-              "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj"
+              "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj": {
+                "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj"
               },
-              "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj"
+              "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj": {
+                "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj"
               }
             }
           }
@@ -50,7 +54,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -59,6 +64,10 @@
             "EPPlus": {
               "target": "Package",
               "version": "[7.4.0, )"
+            },
+            "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": {
+              "target": "Package",
+              "version": "[3.0.1130, )"
             },
             "RockwellAutomation.LogixDesigner.CSClient": {
               "target": "Package",
@@ -81,21 +90,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj": {
+    "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj",
+        "projectUniqueName": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj",
         "projectName": "ConsoleFormatter_ClassLibrary",
-        "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj",
-        "packagesPath": "C:\\Users\\ASYost\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\obj\\",
+        "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj",
+        "packagesPath": "C:\\Users\\tnpgent\\.nuget\\packages\\",
+        "outputPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASYost\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tnpgent\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,11 +134,22 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": {
+              "target": "Package",
+              "version": "[3.0.1130, )"
+            },
+            "RockwellAutomation.LogixDesigner.CSClient": {
+              "target": "Package",
+              "version": "[2.0.861, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -142,21 +166,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj": {
+    "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj",
+        "projectUniqueName": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj",
         "projectName": "LogixDesigner_ClassLibrary",
-        "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj",
-        "packagesPath": "C:\\Users\\ASYost\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\obj\\",
+        "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\LogixDesigner_ClassLibrary.csproj",
+        "packagesPath": "C:\\Users\\tnpgent\\.nuget\\packages\\",
+        "outputPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixDesigner_ClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASYost\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tnpgent\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -171,8 +199,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj"
+              "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj": {
+                "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\ConsoleFormatter_ClassLibrary\\ConsoleFormatter_ClassLibrary.csproj"
               }
             }
           }
@@ -186,12 +214,17 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": {
+              "target": "Package",
+              "version": "[3.0.1130, )"
+            },
             "RockwellAutomation.LogixDesigner.CSClient": {
               "target": "Package",
               "version": "[2.0.774, )"
@@ -213,21 +246,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj": {
+    "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj",
+        "projectUniqueName": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj",
         "projectName": "LogixEcho_ClassLibrary",
-        "projectPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj",
-        "packagesPath": "C:\\Users\\ASYost\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASYost\\Desktop\\RA_CICD_FINAL\\ra-cicd-test6\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\obj\\",
+        "projectPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj",
+        "packagesPath": "C:\\Users\\tnpgent\\.nuget\\packages\\",
+        "outputPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASYost\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tnpgent\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -253,7 +290,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net6.0": {
@@ -262,6 +300,10 @@
             "RockwellAutomation.FactoryTalkLogixEcho.Api.Client": {
               "target": "Package",
               "version": "[3.0.1130, )"
+            },
+            "RockwellAutomation.LogixDesigner.CSClient": {
+              "target": "Package",
+              "version": "[2.0.861, )"
             }
           },
           "imports": [
@@ -280,7 +322,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
