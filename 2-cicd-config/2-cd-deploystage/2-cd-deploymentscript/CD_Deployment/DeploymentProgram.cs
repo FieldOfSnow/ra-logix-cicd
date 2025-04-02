@@ -129,6 +129,7 @@ namespace CD_Deployment
                 // If one of the input file paths specified are for an emulated controller, create that Echo controller if it did not previously exist.
                 if (plcCommPath.StartsWith(@"EmulateEthernet\"))
                 {
+                    ConsoleMessage($"ACDFilepath = {acdFilePath}", "NEWSECTION");
 
                     if (i == 0)
                         ConsoleMessage($"START creating emulated controller for '{plcCommPath}' in chassis 'GeneratedChassis-{i + 1}'.", "NEWSECTION", false);
@@ -136,6 +137,9 @@ namespace CD_Deployment
                         ConsoleMessage($"START creating emulated controller for '{plcCommPath}' in chassis 'GeneratedChassis-{i + 1}'.", "NEWSECTION");
 
                     string justIP = plcCommPath.Replace(@"EmulateEthernet\", "");
+                    
+                    ConsoleMessage($"PLCCommpath = {plcCommPath}. justIP = {justIP}", "NEWSECTION");
+
                     await LogixEchoMethods.CreateChassisFromACD_Async(acdFilePath, justIP, $"GeneratedChassis-{i + 1}");
                     ConsoleMessage($"Done creating emulated controller for '{plcCommPath}' in chassis 'GeneratedChassis-{i + 1}'.", "STATUS");
                     ConsoleMessage($"Note that in a typical CI/CD system, the input excel workbook would not contain any emulated controller communication " +
