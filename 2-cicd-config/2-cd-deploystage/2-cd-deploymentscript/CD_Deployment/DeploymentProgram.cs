@@ -85,20 +85,24 @@ namespace CD_Deployment
             ConsoleMessage("START downloading specified ACD application files to specified controllers...", "NEWSECTION", false);
             ConsoleMessage($"Input excel workbook used is '{inputExcelFilePath}'.", "STATUS");
             CreateBanner("BEGIN DOWNLOADS");
+            ConsoleMessage($"Test1", "STATUS");
 
             int numberOfControllers = GetPopulatedCellsInColumnCount(inputExcelFilePath, 2) - 2;
             ExcelPackage package = new ExcelPackage(new FileInfo(inputExcelFilePath));
             ExcelWorksheet worksheet = package.Workbook.Worksheets.FirstOrDefault()!;
 
+            ConsoleMessage($"Test2", "STATUS");
             // Download ACDs to each controller specified in the input excel workbook.
             for (int i = 0; i < numberOfControllers; i++)
             {
+                ConsoleMessage($"Test3", "STATUS");
                 int rowNumber = i + 7;
                 string applicationFilePath = worksheet.Cells[rowNumber, 2].Value.ToString()!;
                 string plcCommPath = worksheet.Cells[rowNumber, 3].Value.ToString()!;
                 string acdFilePath = githubPath + applicationFilePath;
                 string generatedACD = reportAndGeneratedFilesFolderPath + currentDateTime + "_" + Path.GetFileNameWithoutExtension(acdFilePath) + ".ACD";
 
+                ConsoleMessage($"Test4", "STATUS");
                 // If the application file is an L5X file type, convert it to an ACD.
                 if ((acdFilePath.EndsWith("L5X", StringComparison.OrdinalIgnoreCase) || acdFilePath.EndsWith("l5x", StringComparison.OrdinalIgnoreCase)) && !File.Exists(generatedACD))
                 {
@@ -125,6 +129,8 @@ namespace CD_Deployment
                 }
                 if ((acdFilePath.EndsWith("L5X", StringComparison.OrdinalIgnoreCase) || acdFilePath.EndsWith("l5x", StringComparison.OrdinalIgnoreCase)) && File.Exists(generatedACD))
                     acdFilePath = generatedACD;
+
+                ConsoleMessage($"Test5", "STATUS");
 
                 // If one of the input file paths specified are for an emulated controller, create that Echo controller if it did not previously exist.
                 if (plcCommPath.StartsWith(@"EmulateEthernet\"))
@@ -190,6 +196,8 @@ namespace CD_Deployment
                     ConsoleMessage($"Retaining Logix Echo chassis 'GeneratedChassis-{i + 1}' and its controller '{plcCommPath}'.", "NEWSECTION");
                 }
             }
+
+            ConsoleMessage($"Test20", "STATUS");
 
             // Compute how long the test took to run and print final banner.
             DateTime testEndTime = DateTime.Now;

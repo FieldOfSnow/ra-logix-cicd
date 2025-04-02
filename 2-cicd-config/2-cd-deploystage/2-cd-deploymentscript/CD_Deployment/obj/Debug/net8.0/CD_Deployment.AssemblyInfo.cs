@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CD_Deployment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1026bfdd9fe9f0c6419f8ffcbff9f93a79618ddc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f12786d116436dacea6609cd69086e462fd57a74")]
 [assembly: System.Reflection.AssemblyProductAttribute("CD_Deployment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CD_Deployment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
