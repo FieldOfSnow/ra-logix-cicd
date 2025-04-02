@@ -89,9 +89,9 @@ namespace CD_Deployment
             ConsoleMessage("START downloading specified ACD application files to specified controllers...", "NEWSECTION", false);
             ConsoleMessage($"Input excel workbook used is '{inputExcelFilePath}'.", "STATUS");
             CreateBanner("BEGIN DOWNLOADS");
-            ConsoleMessage($"Test1 '{inputExcelFilePath}'.", "STATUS", false);
-            ConsoleMessage($"Test1", "STATUS", false);
-            CreateBanner("Test");
+            //ConsoleMessage($"Test1 '{inputExcelFilePath}'.", "STATUS", false);
+            //ConsoleMessage($"Test1", "STATUS", false);
+            //CreateBanner("Test");
 
             //int numberOfControllers = GetPopulatedCellsInColumnCount(inputExcelFilePath, 2) - 2;
             int numberOfControllers = 1;
@@ -99,18 +99,18 @@ namespace CD_Deployment
             //ExcelPackage package = new ExcelPackage(new FileInfo(inputExcelFilePath));
             //ExcelWorksheet worksheet = package.Workbook.Worksheets.FirstOrDefault()!;
 
-            ConsoleMessage($"Test2", "STATUS");
+            //ConsoleMessage($"Test2", "STATUS");
             // Download ACDs to each controller specified in the input excel workbook.
             for (int i = 0; i < numberOfControllers; i++)
             {
-                ConsoleMessage($"Test3", "STATUS");
+                //ConsoleMessage($"Test3", "STATUS");
                 //int rowNumber = i + 7;
                 string applicationFilePath = "1-production-files\\L5Xs\\ExampleForCICD_L85E.L5X"; // worksheet.Cells[rowNumber, 2].Value.ToString()!;
                 string plcCommPath = "EmulateEthernet\\127.0.0.1"; // worksheet.Cells[rowNumber, 3].Value.ToString()!;
                 string acdFilePath = githubPath + applicationFilePath;
                 string generatedACD = reportAndGeneratedFilesFolderPath + currentDateTime + "_" + Path.GetFileNameWithoutExtension(acdFilePath) + ".ACD";
 
-                ConsoleMessage($"Test4", "STATUS");
+                //ConsoleMessage($"Test4", "STATUS");
                 // If the application file is an L5X file type, convert it to an ACD.
                 if ((acdFilePath.EndsWith("L5X", StringComparison.OrdinalIgnoreCase) || acdFilePath.EndsWith("l5x", StringComparison.OrdinalIgnoreCase)) && !File.Exists(generatedACD))
                 {
@@ -138,12 +138,12 @@ namespace CD_Deployment
                 if ((acdFilePath.EndsWith("L5X", StringComparison.OrdinalIgnoreCase) || acdFilePath.EndsWith("l5x", StringComparison.OrdinalIgnoreCase)) && File.Exists(generatedACD))
                     acdFilePath = generatedACD;
 
-                ConsoleMessage($"Test5", "STATUS");
+                //ConsoleMessage($"Test5", "STATUS");
 
                 // If one of the input file paths specified are for an emulated controller, create that Echo controller if it did not previously exist.
                 if (plcCommPath.StartsWith(@"EmulateEthernet\"))
                 {
-                    ConsoleMessage($"ACDFilepath = {acdFilePath}", "NEWSECTION");
+                    //ConsoleMessage($"ACDFilepath = {acdFilePath}", "NEWSECTION");
 
                     if (i == 0)
                         ConsoleMessage($"START creating emulated controller for '{plcCommPath}' in chassis 'GeneratedChassis-{i + 1}'.", "NEWSECTION", false);
@@ -152,7 +152,7 @@ namespace CD_Deployment
 
                     string justIP = plcCommPath.Replace(@"EmulateEthernet\", "");
                     
-                    ConsoleMessage($"PLCCommpath = {plcCommPath}. justIP = {justIP}", "NEWSECTION");
+                    //ConsoleMessage($"PLCCommpath = {plcCommPath}. justIP = {justIP}", "NEWSECTION");
 
                     await LogixEchoMethods.CreateChassisFromACD_Async(acdFilePath, justIP, $"GeneratedChassis-{i + 1}");
                     ConsoleMessage($"Done creating emulated controller for '{plcCommPath}' in chassis 'GeneratedChassis-{i + 1}'.", "STATUS");
