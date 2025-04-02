@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\",
+  "WorkspaceRootPath": "C:\\Users\\tnpgent\\Documents\\GitHub\\ra-logix-cicd\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBA13A7D-5C92-466A-B1BC-31E9A7FC355F}|CD_Deployment\\CD_Deployment.csproj|c:\\tools\\data\\jenkins_home\\workspace\\ra-example-cd\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\cd_deployment\\deploymentprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{84A2FA97-73B2-437A-986E-0317FE4E30FD}|LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj|c:\\users\\tnpgent\\documents\\github\\ra-logix-cicd\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\logixecho_classlibrary\\echo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84A2FA97-73B2-437A-986E-0317FE4E30FD}|LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj|solutionrelative:logixecho_classlibrary\\echo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA13A7D-5C92-466A-B1BC-31E9A7FC355F}|CD_Deployment\\CD_Deployment.csproj|c:\\users\\tnpgent\\documents\\github\\ra-logix-cicd\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\cd_deployment\\deploymentprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBA13A7D-5C92-466A-B1BC-31E9A7FC355F}|CD_Deployment\\CD_Deployment.csproj|solutionrelative:cd_deployment\\deploymentprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Echo.cs",
+              "DocumentMoniker": "C:\\Users\\tnpgent\\Documents\\GitHub\\ra-logix-cicd\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\Echo.cs",
+              "RelativeDocumentMoniker": "LogixEcho_ClassLibrary\\Echo.cs",
+              "ToolTip": "C:\\Users\\tnpgent\\Documents\\GitHub\\ra-logix-cicd\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\Echo.cs",
+              "RelativeToolTip": "LogixEcho_ClassLibrary\\Echo.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAowCUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T19:47:40.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DeploymentProgram.cs",
-              "DocumentMoniker": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\DeploymentProgram.cs",
+              "DocumentMoniker": "C:\\Users\\tnpgent\\Documents\\GitHub\\ra-logix-cicd\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\DeploymentProgram.cs",
               "RelativeDocumentMoniker": "CD_Deployment\\DeploymentProgram.cs",
-              "ToolTip": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\DeploymentProgram.cs",
+              "ToolTip": "C:\\Users\\tnpgent\\Documents\\GitHub\\ra-logix-cicd\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\CD_Deployment\\DeploymentProgram.cs",
               "RelativeToolTip": "CD_Deployment\\DeploymentProgram.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAmwFIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAowJoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T19:03:14.249Z",
               "EditorCaption": ""

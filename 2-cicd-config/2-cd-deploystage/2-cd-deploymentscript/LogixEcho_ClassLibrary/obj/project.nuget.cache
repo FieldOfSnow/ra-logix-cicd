@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pW4bSEN/I6I=",
+  "dgSpecHash": "T9Zg23q4C9s=",
   "success": true,
-  "projectFilePath": "C:\\tools\\data\\jenkins_home\\workspace\\RA-EXAMPLE-CD\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj",
+  "projectFilePath": "C:\\Users\\tnpgent\\Documents\\GitHub\\ra-logix-cicd\\2-cicd-config\\2-cd-deploystage\\2-cd-deploymentscript\\LogixEcho_ClassLibrary\\LogixEcho_ClassLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tnpgent\\.nuget\\packages\\google.protobuf\\3.24.3\\google.protobuf.3.24.3.nupkg.sha512",
     "C:\\Users\\tnpgent\\.nuget\\packages\\grpc\\2.46.6\\grpc.2.46.6.nupkg.sha512",

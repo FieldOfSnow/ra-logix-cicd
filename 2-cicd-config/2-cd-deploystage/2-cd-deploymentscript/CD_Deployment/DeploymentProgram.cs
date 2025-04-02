@@ -15,6 +15,7 @@ using RockwellAutomation.LogixDesigner.Logging;
 using static ConsoleFormatter_ClassLibrary.ConsoleFormatter;
 using static LogixDesigner_ClassLibrary.LogixDesigner;
 using static RockwellAutomation.LogixDesigner.LogixProject;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CD_Deployment
 {
@@ -57,11 +58,14 @@ namespace CD_Deployment
             }
 
             // Parse the input excel sheet needed to determine which modules are to have their firmware verified & flashed if needed.
-            string githubPath = args[0];                           // 1st incoming argument = GitHub folder path
-            string reportAndGeneratedFilesFolderPath = args[1];    /* 2nd incoming argument = the folder path to the folder storing generated test files
+            //string githubPath = args[0];                           // 1st incoming argument = GitHub folder path
+            /*string reportAndGeneratedFilesFolderPath = args[1];     2nd incoming argument = the folder path to the folder storing generated test files
                                                                       Note that this input argument is only included to demo downloading with no hardware present. 
                                                                       This input argument reference can be freely deleted if no emulated controllers are included
                                                                       in the DeployToControllersWorkbook excel workbook list of target download controllers.*/
+            ExcelPackage.License.SetNonCommercialPersonal("<Your Name>");
+            string githubPath =  @"C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\";
+            string reportAndGeneratedFilesFolderPath = @"C:\CD-Pipeline-Files\";
             string inputExcelFilePath = githubPath + @"2-cicd-config\2-cd-deploystage\3-cd-inputexcelworkbooks\DeployToControllersWorkbook.xlsx";
 
             // Create the local folders that will contain the test reports and generated file contents.
@@ -89,18 +93,20 @@ namespace CD_Deployment
             ConsoleMessage($"Test1", "STATUS", false);
             CreateBanner("Test");
 
-            int numberOfControllers = GetPopulatedCellsInColumnCount(inputExcelFilePath, 2) - 2;
-            ExcelPackage package = new ExcelPackage(new FileInfo(inputExcelFilePath));
-            ExcelWorksheet worksheet = package.Workbook.Worksheets.FirstOrDefault()!;
+            //int numberOfControllers = GetPopulatedCellsInColumnCount(inputExcelFilePath, 2) - 2;
+            int numberOfControllers = 1;
+
+            //ExcelPackage package = new ExcelPackage(new FileInfo(inputExcelFilePath));
+            //ExcelWorksheet worksheet = package.Workbook.Worksheets.FirstOrDefault()!;
 
             ConsoleMessage($"Test2", "STATUS");
             // Download ACDs to each controller specified in the input excel workbook.
             for (int i = 0; i < numberOfControllers; i++)
             {
                 ConsoleMessage($"Test3", "STATUS");
-                int rowNumber = i + 7;
-                string applicationFilePath = worksheet.Cells[rowNumber, 2].Value.ToString()!;
-                string plcCommPath = worksheet.Cells[rowNumber, 3].Value.ToString()!;
+                //int rowNumber = i + 7;
+                string applicationFilePath = "1-production-files\\ACDs from L5Xs\\ExampleForCICD_L85E.ACD"; // worksheet.Cells[rowNumber, 2].Value.ToString()!;
+                string plcCommPath = "EmulateEthernet\\127.0.0.1"; // worksheet.Cells[rowNumber, 3].Value.ToString()!;
                 string acdFilePath = githubPath + applicationFilePath;
                 string generatedACD = reportAndGeneratedFilesFolderPath + currentDateTime + "_" + Path.GetFileNameWithoutExtension(acdFilePath) + ".ACD";
 
@@ -218,6 +224,7 @@ namespace CD_Deployment
         private static int GetPopulatedCellsInColumnCount(string excelFilePath, int columnNumber)
         {
             int returnCellCount = 0;
+            
             using (ExcelPackage package = new ExcelPackage(new FileInfo(excelFilePath)))
             {
                 ExcelWorksheet worksheet = package.Workbook.Worksheets.FirstOrDefault()!;
