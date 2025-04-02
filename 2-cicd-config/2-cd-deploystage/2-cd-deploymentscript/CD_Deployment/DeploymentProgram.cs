@@ -64,7 +64,7 @@ namespace CD_Deployment
                                                                       This input argument reference can be freely deleted if no emulated controllers are included
                                                                       in the DeployToControllersWorkbook excel workbook list of target download controllers.*/
             ExcelPackage.License.SetNonCommercialPersonal("<Your Name>");
-            string githubPath =  @"C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\";
+            string githubPath = @"C:\tools\data\jenkins_home\workspace\RA-EXAMPLE-CD\"; // @"C:\Users\tnpgent\Documents\GitHub\ra-logix-cicd\"; // 
             string reportAndGeneratedFilesFolderPath = @"C:\CD-Pipeline-Files\";
             string inputExcelFilePath = githubPath + @"2-cicd-config\2-cd-deploystage\3-cd-inputexcelworkbooks\DeployToControllersWorkbook.xlsx";
 
@@ -105,7 +105,7 @@ namespace CD_Deployment
             {
                 ConsoleMessage($"Test3", "STATUS");
                 //int rowNumber = i + 7;
-                string applicationFilePath = "1-production-files\\ACDs from L5Xs\\ExampleForCICD_L85E.ACD"; // worksheet.Cells[rowNumber, 2].Value.ToString()!;
+                string applicationFilePath = "1-production-files\\L5Xs\\ExampleForCICD_L85E.L5X"; // worksheet.Cells[rowNumber, 2].Value.ToString()!;
                 string plcCommPath = "EmulateEthernet\\127.0.0.1"; // worksheet.Cells[rowNumber, 3].Value.ToString()!;
                 string acdFilePath = githubPath + applicationFilePath;
                 string generatedACD = reportAndGeneratedFilesFolderPath + currentDateTime + "_" + Path.GetFileNameWithoutExtension(acdFilePath) + ".ACD";
