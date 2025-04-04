@@ -14,7 +14,6 @@ pipeline {
     stages {
         stage('Debug') {
             steps {
-                createBanner('STAGE: Test')
                 script {
 						sh 'git --version'
                     }
