@@ -11,11 +11,16 @@
 pipeline {
     agent any // Uses any available agent (node).
 
+	environment {
+        PATH = "C:\\Users\\tnpgent\\AppData\\Local\\Programs\\Git\\cmd;${env.PATH}"  // Adjust the path as needed
+    }
+	
     stages {
         stage('Debug') {
             steps {
                 script {
-						bat 'git --version'
+						bat 'echo pwd'
+						//bat 'git --version'
 					}
 				}
             }
