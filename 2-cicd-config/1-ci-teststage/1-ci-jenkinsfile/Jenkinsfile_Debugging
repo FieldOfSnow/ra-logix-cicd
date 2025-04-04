@@ -1,0 +1,26 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------
+//
+// FileName:     Jenkinsfile_CI
+// FileType:     Text File using Declarative Pipeline syntax (based on Groovy programming language) 
+// Author:       Rockwell Automation Engineering
+// Created:      2024
+// Description:  This script executes the example continuous integration pipeline for a CI/CD system used for Studio 5000 Logix Designer application development.
+//
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+pipeline {
+    agent any // Uses any available agent (node).
+
+    stages {
+        stage('Debug') {
+            steps {
+                createBanner('STAGE: Test')
+                script {
+						sh 'git --version'
+                    }
+                }
+            }
+        }
+        
+    }
+}
