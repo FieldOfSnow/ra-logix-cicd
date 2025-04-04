@@ -29,7 +29,7 @@ pipeline {
                 script {
 						//bat 'for %i in (.) do echo "%~fi"'
 						//bat 'git --version'
-						def pathTest = "${env.PATH_JENKINS_GITHUB}"
+						def pathTest = "PATH passes"
 						bat 'path Test1'
 						bat "${pathTest}"
 						bat "Path Test 2: ${pathTest}"
