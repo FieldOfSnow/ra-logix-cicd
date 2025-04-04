@@ -69,6 +69,8 @@ namespace UnitTesting_ConsoleApp
         /// <returns>A Task that unit tests a specific Studio 5000 Logix Designer component specified within the input excel sheet.</returns>
         static async Task Main(string[] args)
         {
+            ExcelPackage.License.SetNonCommercialPersonal("Test Name");
+
             // Incorrect number of parameters console output.
             if (args.Length != 9)
             {
