@@ -31,8 +31,8 @@ pipeline {
 						bat 'git --version'
 						bat 'echo %GITHUB_USER_EMAIL%'
 						//def pathOutput = powershell(script: 'echo $env:PATH', returnStdout: true).trim()
-						echo "PATH is: ${pathOutput}"
-						def pathOutput4 = powershell(script: "git log -1 --pretty=format:'%ae'", returnStdout: true).trim()
+						//echo "PATH is: ${pathOutput}"
+						//def pathOutput4 = powershell(script: "git log -1 --pretty=format:'%ae'", returnStdout: true).trim()
 						//echo "git test: ${pathOutput4}"
 					}
 				}
