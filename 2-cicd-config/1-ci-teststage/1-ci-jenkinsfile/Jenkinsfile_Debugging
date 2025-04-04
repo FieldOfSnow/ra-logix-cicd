@@ -29,7 +29,7 @@ pipeline {
                 script {
 						//bat 'for %i in (.) do echo "%~fi"'
 						//bat 'git --version'
-						bat 'echo %PATH%'
+						bat 'echo %%PATH%%'
 						//bat 'echo %GITHUB_USER_EMAIL%'
 						//def pathOutput = powershell(script: 'echo $env:PATH', returnStdout: true).trim()
 						//echo "PATH is: ${pathOutput}"
