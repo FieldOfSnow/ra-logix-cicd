@@ -12,7 +12,7 @@ pipeline {
     agent any // Uses any available agent (node).
 
 	environment {
-        PATH = "C:\\Users\\tnpgent\\AppData\\Local\\Programs\\Git\\cmd;${env.PATH}"  // Adjust the path as needed
+        //PATH = "C:\\Users\\tnpgent\\AppData\\Local\\Programs\\Git\\cmd;${env.PATH}"  // Adjust the path as needed
 		PATH_JENKINS_GITHUB = "C:\\data\\jenkins_home\\workspace\\${env.JOB_NAME}\\"
         PATH_GEN_FILES_AND_REPORTS = "C:\\CI-Pipeline-Files\\"
         GITHUB_DEV_BRANCH = 'develop'
