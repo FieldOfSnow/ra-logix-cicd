@@ -15,7 +15,7 @@ pipeline {
         stage('Debug') {
             steps {
                 script {
-						sh 'echo "hello world"'
+						bat 'echo "hello world"'
 					}
 				}
             }
