@@ -17,10 +17,10 @@ pipeline {
         GITHUB_DEV_BRANCH = 'develop/datatype-bounds'
         GITHUB_RELEASE_BRANCH = 'release/v1.0.0'
         FINAL_TEST_RESULT = "PASS"
-        GITHUB_USER_EMAIL = powershell(script: "git log -1 --pretty=format:'%ae'", returnStdout: true).trim()
-        GITHUB_USER_NAME = powershell(script: "git log -1 --pretty=format:'%an'", returnStdout: true).trim()
-        GITHUB_COMMIT_HASH = powershell(script: "git log -1 --pretty=format:'%H'", returnStdout: true).trim()
-        GITHUB_COMMIT_MSG = powershell(script: "git log -1 --pretty=format:'%s'", returnStdout: true).trim()
+        //GITHUB_USER_EMAIL = powershell(script: "git log -1 --pretty=format:'%ae'", returnStdout: true).trim()
+        //GITHUB_USER_NAME = powershell(script: "git log -1 --pretty=format:'%an'", returnStdout: true).trim()
+        //GITHUB_COMMIT_HASH = powershell(script: "git log -1 --pretty=format:'%H'", returnStdout: true).trim()
+        //GITHUB_COMMIT_MSG = powershell(script: "git log -1 --pretty=format:'%s'", returnStdout: true).trim()
     }
 	
     stages {
@@ -28,7 +28,8 @@ pipeline {
             steps {
                 script {
 						//bat 'for %i in (.) do echo "%~fi"'
-						bat 'git --version'
+						//bat 'git --version'
+						bat 'echo %PATH%'
 						//bat 'echo %GITHUB_USER_EMAIL%'
 						//def pathOutput = powershell(script: 'echo $env:PATH', returnStdout: true).trim()
 						//echo "PATH is: ${pathOutput}"
