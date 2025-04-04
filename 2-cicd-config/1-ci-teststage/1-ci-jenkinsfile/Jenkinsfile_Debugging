@@ -70,7 +70,7 @@ pipeline {
                     //    if (testFinalResult == "FAIL") {
                     //        FINAL_TEST_RESULT = testFinalResult
                     //    }
-                    }
+                    //}
                 }
             }
 		}
