@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
 						//bat 'git --version'
-						def pathTest = "${env.GITHUB_USER_EMAIL}"
+						def pathTest = "${PATH}"
 						echo "path Test1"
 						echo "${pathTest}"
 						echo "Path Test 2: ${pathTest}"
