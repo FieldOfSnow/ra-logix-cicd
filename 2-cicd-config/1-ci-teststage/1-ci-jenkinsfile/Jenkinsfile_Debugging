@@ -27,9 +27,8 @@ pipeline {
         stage('Debug') {
             steps {
                 script {
-						//bat 'for %i in (.) do echo "%~fi"'
 						//bat 'git --version'
-						def pathTest = "PATH passes"
+						def pathTest = "${env.PATH_JENKINS_GITHUB}"
 						echo "path Test1"
 						echo "${pathTest}"
 						echo "Path Test 2: ${pathTest}"
