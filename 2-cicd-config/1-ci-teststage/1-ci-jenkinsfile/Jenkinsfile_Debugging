@@ -41,4 +41,34 @@ pipeline {
 				}
             }
         } 
+		
+		stage('Test') {
+            steps {
+                createBanner('STAGE: Test')
+                script {
+                    def inputExcelWorkbooksFolderPath = "${env.PATH_JENKINS_GITHUB}2-cicd-config\\1-ci-teststage\\3-ci-inputexcelworkbooks"
+                    def executable_filePath = "${env.PATH_JENKINS_GITHUB}2-cicd-config\\1-ci-teststage\\2-ci-unittestscript\\UnitTesting_ConsoleApp\\bin\\" +
+                        "Release\\net8.0\\UnitTesting_ConsoleApp.exe"
+
+                    // Get all file names in the specified folder
+                    def excelFileNames = powershell(
+                        script: "Get-ChildItem -Path ${inputExcelWorkbooksFolderPath} -Filter *.xlsx | Select-Object -ExpandProperty Name",
+                        returnStdout: true
+                    ).trim().split('\n')
+
+                    // Loop through each excel workbook file name and execute the test script for each workbook. 
+                    excelFileNames.each { fileName ->
+                        bat(script: "@${executable_filePath} ${env.PATH_JENKINS_GITHUB} ${fileName.trim()} \"${env.GITHUB_USER_NAME}\" ${env.GITHUB_USER_EMAIL} " +
+                            "\"${env.GITHUB_COMMIT_MSG}\" ${env.GITHUB_COMMIT_HASH} ${env.JOB_NAME} ${env.BUILD_NUMBER} ${env.PATH_GEN_FILES_AND_REPORTS}")
+
+                        // Get the phrase "PASS" or "FAIL" from the final banner displayed in the text report.
+                        testFinalResult = trimFinalTextReportBanner("${env.PATH_GEN_FILES_AND_REPORTS}1-textreports")
+
+                        // Assign the test results value directly to FINAL_TEST_RESULT environment variable.
+                        if (testFinalResult == "FAIL") {
+                            FINAL_TEST_RESULT = testFinalResult
+                        }
+                    }
+                }
+            }
     }
