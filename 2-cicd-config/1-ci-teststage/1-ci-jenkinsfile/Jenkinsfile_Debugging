@@ -19,8 +19,8 @@ pipeline {
         stage('Debug') {
             steps {
                 script {
-						bat 'for %i in (.) do echo "%~fi"'
-						//bat 'git --version'
+						//bat 'for %i in (.) do echo "%~fi"'
+						bat 'git --version'
 					}
 				}
             }
