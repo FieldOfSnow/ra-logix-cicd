@@ -30,9 +30,9 @@ pipeline {
 						//bat 'git --version'
 						
 						def pathTest = "${PATH}"
-						echo "path Test1"
-						bat 'echo Hello, World!'
 						echo "${pathTest}"
+						bat 'echo Hello, World!'
+						
 						echo "Path Test 2: ${pathTest}"
 						//bat 'echo %GITHUB_USER_EMAIL%'
 						//def pathOutput = powershell(script: 'echo $env:PATH', returnStdout: true).trim()
