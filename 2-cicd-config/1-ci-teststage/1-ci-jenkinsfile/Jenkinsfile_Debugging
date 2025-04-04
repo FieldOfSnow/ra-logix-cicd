@@ -19,7 +19,7 @@ pipeline {
         stage('Debug') {
             steps {
                 script {
-						bat 'for %i in (.) do echo %~fi'
+						bat 'for %i in (.) do echo "%~fi"'
 						//bat 'git --version'
 					}
 				}
