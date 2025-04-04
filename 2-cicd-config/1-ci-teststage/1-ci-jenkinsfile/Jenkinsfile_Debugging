@@ -15,7 +15,7 @@ pipeline {
         stage('Debug') {
             steps {
                 script {
-						sh 'git --version'
+						sh 'echo "hello world"'
 					}
 				}
             }
