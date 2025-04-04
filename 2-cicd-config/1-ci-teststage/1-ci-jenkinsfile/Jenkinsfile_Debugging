@@ -13,6 +13,15 @@ pipeline {
 
 	environment {
         PATH = "C:\\Users\\tnpgent\\AppData\\Local\\Programs\\Git\\cmd;${env.PATH}"  // Adjust the path as needed
+		PATH_JENKINS_GITHUB = "C:\\data\\jenkins_home\\workspace\\${env.JOB_NAME}\\"
+        PATH_GEN_FILES_AND_REPORTS = "C:\\CI-Pipeline-Files\\"
+        GITHUB_DEV_BRANCH = 'develop'
+        GITHUB_RELEASE_BRANCH = 'release/v1.0.0'
+        FINAL_TEST_RESULT = "PASS"
+        GITHUB_USER_EMAIL = powershell(script: "git log -1 --pretty=format:'%ae'", returnStdout: true).trim()
+        GITHUB_USER_NAME = powershell(script: "git log -1 --pretty=format:'%an'", returnStdout: true).trim()
+        GITHUB_COMMIT_HASH = powershell(script: "git log -1 --pretty=format:'%H'", returnStdout: true).trim()
+        GITHUB_COMMIT_MSG = powershell(script: "git log -1 --pretty=format:'%s'", returnStdout: true).trim()
     }
 	
     stages {
