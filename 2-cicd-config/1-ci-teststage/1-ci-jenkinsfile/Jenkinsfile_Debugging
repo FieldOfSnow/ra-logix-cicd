@@ -31,7 +31,7 @@ pipeline {
 			
 			//def pathTest = "${PATH}"
 			//echo "${pathTest}"
-			//bat 'echo "Hello, World!"'
+			bat 'echo "Hello, World!"'
 			
 			//echo "Path Test 2: ${pathTest}"
 			//bat 'echo %GITHUB_USER_EMAIL%'
